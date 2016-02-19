@@ -3,11 +3,23 @@
 a:focus {
   outline: 0; }
 
+html {
+  height: 100%; }
+
 body {
   padding-top: 60px;
   background-color: #000;
-  text-align: center; }
+  text-align: center;
+  height: 100%; }
 
+#wrap {
+  min-height: 100%; }
+
+#main {
+  overflow: auto;
+  padding-bottom: 50px; }
+
+/* must be same height as the footer */
 /****** site specific *******/
 .macondo-text {
   color: #fff;
@@ -227,11 +239,9 @@ body {
 
 /****** footer *********/
 #footer {
-  position: fixed;
-  left: 0px;
-  bottom: 0px;
+  margin-top: -30px;
   height: 30px;
-  width: 100%; }
+  clear: both; }
 
 /* IE 6 */
 * html #footer {
@@ -291,9 +301,6 @@ body {
   body .info-text {
     font-size: 16px; }
 
-  #footer {
-    height: 40px; }
-
   #footer-box {
     float: none;
     margin: 0 auto; }
@@ -307,9 +314,5 @@ body {
   body #as-img {
     height: 60px;
     margin-bottom: 15px; } }
-@media screen and (min-width: 1200px) and (max-height: 940px), screen and (min-width: 1000px) and (max-width: 1200px) and (max-height: 780px), screen and (min-width: 500px) and (max-width: 1000px) and (max-height: 660px), screen and (max-width: 500px) and (max-height: 740px) {
-  body #footer {
-    position: static;
-    margin-top: 5px; } }
 
 /*# sourceMappingURL=macondo.css.map */

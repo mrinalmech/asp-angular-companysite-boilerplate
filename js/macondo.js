@@ -6,6 +6,15 @@ $(document).ready(function () {
 	var selectedTwitter = unselectedTwitter.replace("img/twitter.png", "img/twitterselected.png");
 	var fadeSpeed = 150;
 
+	var toggle = false;
+
+	$(".navbar-toggle").click(function () {
+		toggle = !toggle;
+
+		if (!toggle)
+			$(".navbar-toggle").blur();
+	});
+
 	$("#fb")
 	.mouseover(function () {
 		$(this).fadeOut(fadeSpeed, function () {

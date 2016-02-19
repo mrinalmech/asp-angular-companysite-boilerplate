@@ -20,47 +20,51 @@
       <link rel="shortcut icon" href="img/macondofavicon.ico" />
    </head>
    <body>
-      <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-         <div class="container-fluid">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mHeader">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a href="/"><img class = "brand" src="img/logo.png" alt="Macondo Games" /></a>
+      <div id="wrap">
+         <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mHeader">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a href="index"><img class = "brand" src="img/logo.png" alt="Macondo Games" /></a>
+               </div>
+               <div class="collapse navbar-collapse" id="mHeader">
+                  <ul class="nav navbar-nav">
+                     <li><a href="about">about</a></li>
+                     <li><a href="games">games</a></li>
+                     <li><a href="career">career</a></li>
+                  </ul>
+               </div>
             </div>
-            <div class="collapse navbar-collapse" id="mHeader">
-               <ul class="nav navbar-nav">
-                  <li><a href="about">about</a></li>
-                  <li><a href="games">games</a></li>
-                  <li><a href="career">career</a></li>
-               </ul>
+         </nav>
+         <div id="main">
+            <div class = "bg-image macondo-bg" alt="Macondo Games">
+               <img id="macondo-img" src="img/logo.png" alt="Macondo Games" />
+               <p class="macondo-text desc-text info-text">
+                  We are Macondo Games, an independent video game developer currently working on our first project American Steel, a 2d run and gun platformer which combines the aesthetics of 80s animated series with the gameplay of 
+                  classics like Contra, Megaman et al. 
+               </p>
+               <a type="button" class="btn btn-macondo" id="as-btn" href="http://www.americansteelgame.com" target="_blank">official site</a>
+               <img class="side-img left-img" src="img/magdalena.png" alt="Magdalena" />
+               <img class="side-img right-img" src="img/zakar.png" alt="Zakar" />
             </div>
+            <div class="row-holder" id="social-buttons">
+               <a href="https://www.facebook.com/macondostudios" target="_blank"><input id="fb" type="image" class="social-button" src="img/fb.png" /></a>
+               <a href="https://twitter.com/macondo_games" target="_blank"><input id="twitter" type="image" class="social-button" src="img/twitter.png" /></a>
+            </div>
+            <form role="form" id="mailing-list">
+               <p id="newsletter-text" class="macondo-text">sign up for the newsletter</p>
+               <div class="row-holder">
+                  <input type = "text" class = "form-control" id = "name" placeholder = "name" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid name">
+                  <input type = "text" class = "form-control" id = "email" placeholder = "email" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid email">
+                  <button id="submit-btn" type = "submit" class = "btn btn-macondo" >subscribe</button>
+               </div>
+            </form>
          </div>
-      </nav>
-      <div class = "bg-image macondo-bg" alt="Macondo Games">
-         <img id="macondo-img" src="img/logo.png" alt="Macondo Games" />
-         <p class="macondo-text desc-text info-text">
-            We are Macondo Games, an independent video game developer currently working on our first project American Steel, a 2d run and gun platformer which combines the aesthetics of 80s animated series with the gameplay of 
-            classics like Contra, Megaman et al. 
-         </p>
-         <a type="button" class="btn btn-macondo" id="as-btn" href="http://www.americansteelgame.com" target="_blank">official site</a>
-         <img class="side-img left-img" src="img/magdalena.png" alt="Magdalena" />
-         <img class="side-img right-img" src="img/zakar.png" alt="Zakar" />
       </div>
-      <div class="row-holder" id="social-buttons">
-         <a href="https://www.facebook.com/macondostudios" target="_blank"><input id="fb" type="image" class="social-button" src="img/fb.png" /></a>
-         <a href="https://twitter.com/macondo_games" target="_blank"><input id="twitter" type="image" class="social-button" src="img/twitter.png" /></a>
-      </div>
-      <form role="form" id="mailing-list">
-         <p id="newsletter-text" class="macondo-text">sign up for the newsletter</p>
-         <div class="row-holder">
-            <input type = "text" class = "form-control" id = "name" placeholder = "name" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid name">
-            <input type = "text" class = "form-control" id = "email" placeholder = "email" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid email">
-            <button id="submit-btn" type = "submit" class = "btn btn-macondo" >subscribe</button>
-         </div>
-      </form>
       <div id="footer">
          <div id="footer-box">
             <p id="footer-text" class="macondo-text">site design by mrinal mech</p>
