@@ -15,7 +15,7 @@
       <!-- Javascript -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
       <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-      <script src="js/macondo.js"></script>
+	  <script src="js/macondo.js"></script>
       <!-- Favicon -->
       <link rel="shortcut icon" href="img/macondofavicon.ico" />
    </head>
@@ -29,7 +29,7 @@
                   <span class="icon-bar"></span>
                   <span class="icon-bar"></span>
                   </button>
-                  <a href="index"><img class = "brand" src="img/logo.png" alt="Macondo Games" /></a>
+                  <a href="/"><img class = "brand" src="img/logo.png" alt="Macondo Games" /></a>
                </div>
                <div class="collapse navbar-collapse" id="mHeader">
                   <ul class="nav navbar-nav">
@@ -47,13 +47,19 @@
                   We are Macondo Games, an independent video game developer currently working on our first project American Steel, a 2d run and gun platformer which combines the aesthetics of 80s animated series with the gameplay of 
                   classics like Contra, Megaman et al. 
                </p>
-               <a type="button" class="btn btn-macondo" id="as-btn" href="http://www.americansteelgame.com" target="_blank">official site</a>
+               <a type="button" class="btn btn-macondo" id="as-btn" href="http://www.americansteelgame.com">official site</a>
                <img class="side-img left-img" src="img/magdalena.png" alt="Magdalena" />
                <img class="side-img right-img" src="img/zakar.png" alt="Zakar" />
             </div>
             <div class="row-holder" id="social-buttons">
-               <a href="https://www.facebook.com/macondostudios" target="_blank"><input id="fb" type="image" class="social-button" src="img/fb.png" /></a>
-               <a href="https://twitter.com/macondo_games" target="_blank"><input id="twitter" type="image" class="social-button" src="img/twitter.png" /></a>
+               <a href="https://www.facebook.com/macondostudios" target="_blank" class="cf">
+               <img class="social-button" src="img/fbselected.png" />
+               <img class="social-button top" src="img/fb.png" />
+               </a>
+               <a href="https://twitter.com/macondo_games" target="_blank" class="cf">
+               <img class="social-button" src="img/twitterselected.png" />
+               <img class="social-button top" src="img/twitter.png" />
+               </a>
             </div>
             <form role="form" id="mailing-list">
                <p id="newsletter-text" class="macondo-text">sign up for the newsletter</p>
@@ -69,6 +75,18 @@
          <div id="footer-box">
             <p id="footer-text" class="macondo-text">site design by mrinal mech</p>
             <p id="footer-text" class="macondo-text">© 2016 macondo games</p>
+         </div>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="macondoModal" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <p>A confirmation email has been sent.</p>
+               </div>
+            </div>
          </div>
       </div>
    </body>

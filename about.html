@@ -20,61 +20,79 @@
       <link rel="shortcut icon" href="img/macondofavicon.ico" />
    </head>
    <body>
-   <div id="wrap">
-      <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-         <div class="container-fluid">
-            <div class="navbar-header">
-               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mHeader">
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               <span class="icon-bar"></span>
-               </button>
-               <a href="index"><img class = "brand" src="img/logo.png" alt="Macondo Games" /></a>
+      <div id="wrap">
+         <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+            <div class="container-fluid">
+               <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mHeader">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  </button>
+                  <a href="/"><img class = "brand" src="img/logo.png" alt="Macondo Games" /></a>
+               </div>
+               <div class="collapse navbar-collapse" id="mHeader">
+                  <ul class="nav navbar-nav">
+                     <li><a href="about">about</a></li>
+                     <li><a href="games">games</a></li>
+                     <li><a href="career">career</a></li>
+                  </ul>
+               </div>
             </div>
-            <div class="collapse navbar-collapse" id="mHeader">
-               <ul class="nav navbar-nav">
-                  <li><a href="about">about</a></li>
-                  <li><a href="games">games</a></li>
-                  <li><a href="career">career</a></li>
-               </ul>
+         </nav>
+         <div id="main">
+            <div class="bg-no-image" alt="Macondo Games">
+               <p class="macondo-text desc-text head-text">
+                  about us
+               </p>
+               <p class="macondo-text desc-text body-text">
+                  My love affair with video games started at a young age when my family got our first PC. Hours passed away playing late 90s classics like Doom II, Age of Empires et al. This love 
+                  affair persisted across the years, crossing genres and platforms.</br></br>
+                  The next logical step was to make video games. Armed with a master's in Computer Science I founded Macondo Games in late 2015. We are working on our first project now - American Steel, a run and gun shooter
+                  inspired by the likes of Contra, Metal Slug etc but with modern sensibilities and a visual aesthetic reminiscent of 1980s animated series.</br></br>
+                  Thanks for visiting and keep checking for updates about the game and the company.</br></br>
+                  Mrinal Mech </br>
+                  CEO/Founder </br>
+                  Macondo Games
+               </p>
+               <img class="side-img right-img" src="img/mrinal.png" alt="Mrinal" />
             </div>
+            <div class="row-holder" id="social-buttons">
+               <a href="https://www.facebook.com/macondostudios" target="_blank" class="cf">
+               <img class="social-button" src="img/fbselected.png" />
+               <img class="social-button top" src="img/fb.png" />
+               </a>
+               <a href="https://twitter.com/macondo_games" target="_blank" class="cf">
+               <img class="social-button" src="img/twitterselected.png" />
+               <img class="social-button top" src="img/twitter.png" />
+               </a>
+            </div>
+            <form role="form" id="mailing-list">
+               <p id="newsletter-text" class="macondo-text">sign up for the newsletter</p>
+               <div class="row-holder">
+                  <input type = "text" class = "form-control" id = "name" placeholder = "name" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid name">
+                  <input type = "text" class = "form-control" id = "email" placeholder = "email" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid email">
+                  <button id="submit-btn" type = "submit" class = "btn btn-macondo" >subscribe</button>
+               </div>
+            </form>
          </div>
-      </nav>
-	  <div id="main">
-      <div class = "bg-image" alt="Macondo Games">
-         <p class="macondo-text desc-text head-text">
-            about us
-         </p>
-         <p class="macondo-text desc-text body-text">
-            My love affair with video games started at a young age when my family got our first PC. Hours passed away playing late 90s classics like Doom II, Age of Empires et al. This love 
-			affair persisted across the years, crossing genres and platforms.</br></br>
-			The next logical step was to make video games. Armed with a master's in Computer Science I founded Macondo Games in late 2015. We are working on our first project now - American Steel, a run and gun shooter
-			inspired by the likes of Contra, Metal Slug etc but with modern sensibilities and a visual aesthetic reminiscent of 1980s animated series.</br></br>
-			Thanks for visiting and keep checking for updates about the game and the company</br></br>
-            Mrinal Mech </br>
-            CEO/Founder </br>
-            Macondo Games
-         </p>
-		  <img class="side-img right-img" src="img/mrinal.png" alt="Mrinal" />
       </div>
-      <div class="row-holder" id="social-buttons">
-         <a href="https://www.facebook.com/macondostudios" target="_blank"><input id="fb" type="image" class="social-button" src="img/fb.png" /></a>
-         <a href="https://twitter.com/macondo_games" target="_blank"><input id="twitter" type="image" class="social-button" src="img/twitter.png" /></a>
-      </div>
-      <form role="form" id="mailing-list">
-         <p id="newsletter-text" class="macondo-text">sign up for the newsletter</p>
-         <div class="row-holder">
-            <input type = "text" class = "form-control" id = "name" placeholder = "name" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid name">
-            <input type = "text" class = "form-control" id = "email" placeholder = "email" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid email">
-            <button id="submit-btn" type = "submit" class = "btn btn-macondo" >subscribe</button>
-         </div>
-      </form>
-	  </div>
-	  </div>
       <div id="footer">
          <div id="footer-box">
             <p id="footer-text" class="macondo-text">site design by mrinal mech</p>
             <p id="footer-text" class="macondo-text">© 2016 macondo games</p>
+         </div>
+      </div>
+	  <!-- Modal -->
+      <div class="modal fade" id="macondoModal" role="dialog">
+         <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+               <div class="modal-body">
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                  <p>A confirmation email has been sent.</p>
+               </div>
+            </div>
          </div>
       </div>
    </body>

@@ -1,11 +1,5 @@
 $(document).ready(function () {
 
-	var unselectedFb = $("#fb").attr("src");
-	var selectedFb = unselectedFb.replace("img/fb.png", "img/fbselected.png");
-	var unselectedTwitter = $("#twitter").attr("src");
-	var selectedTwitter = unselectedTwitter.replace("img/twitter.png", "img/twitterselected.png");
-	var fadeSpeed = 150;
-
 	var toggle = false;
 
 	$(".navbar-toggle").click(function () {
@@ -13,34 +7,6 @@ $(document).ready(function () {
 
 		if (!toggle)
 			$(".navbar-toggle").blur();
-	});
-
-	$("#fb")
-	.mouseover(function () {
-		$(this).fadeOut(fadeSpeed, function () {
-			$(this).attr("src", selectedFb);
-			$(this).fadeIn(fadeSpeed);
-		});
-	})
-	.mouseout(function () {
-		$(this).fadeOut(fadeSpeed, function () {
-			$(this).attr("src", unselectedFb);
-			$(this).fadeIn(fadeSpeed);
-		});
-	});
-
-	$("#twitter")
-	.mouseover(function () {
-		$(this).fadeOut(fadeSpeed, function () {
-			$(this).attr("src", selectedTwitter);
-			$(this).fadeIn(fadeSpeed);
-		});
-	})
-	.mouseout(function () {
-		$(this).fadeOut(fadeSpeed, function () {
-			$(this).attr("src", unselectedTwitter);
-			$(this).fadeIn(fadeSpeed);
-		});
 	});
 
 	$("#submit-btn").click(function () {
@@ -82,7 +48,7 @@ $(document).ready(function () {
 				success : function () {
 					$("#name").val("");
 					$("#email").val("");
-					alert("Confirmation email sent");
+					$('#macondoModal').modal();
 				}
 			});
 		}

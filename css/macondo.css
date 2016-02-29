@@ -1,7 +1,11 @@
 /****** mixins *********/
 /****** generic classes ********/
-a:focus {
-  outline: 0; }
+a {
+  color: #ff3a41; }
+  a:focus {
+    outline: 0; }
+  a:hover {
+    color: #ff3a41; }
 
 html {
   height: 100%; }
@@ -111,6 +115,27 @@ body {
   margin-top: 0; }
 
 /******* banner image *******/
+.bg-no-image {
+  padding-top: 40px;
+  position: relative;
+  height: 673px;
+  -webkit-transition: height 0.5s ease 0s;
+  -moz-transition: height 0.5s ease 0s;
+  -ms-transition: height 0.5s ease 0s;
+  -o-transition: height 0.5s ease 0s;
+  transition: height 0.5s ease 0s; }
+
+#list {
+  width: 600px;
+  text-align: left;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  #list > li {
+    color: #fff;
+    font-family: Raleway;
+    font-size: 20px; }
+
 .bg-image {
   width: 100%;
   height: 673px;
@@ -174,10 +199,34 @@ body {
 .right-img {
   right: 30px; }
 
+iframe {
+  float: left;
+  margin: 5px; }
+
+#social-career {
+  margin-top: 15px; }
+
 /****** social buttons ********/
+.cf {
+  display: inline-block;
+  position: relative;
+  height: 40px;
+  width: 40px;
+  margin: 0 auto; }
+
 .social-button {
   height: 30px;
-  margin: 5px; }
+  margin: 5px;
+  position: absolute;
+  left: 0;
+  -webkit-transition: opacity 0.35s ease 0s;
+  -moz-transition: opacity 0.35s ease 0s;
+  -ms-transition: opacity 0.35s ease 0s;
+  -o-transition: opacity 0.35s ease 0s;
+  transition: opacity 0.35s ease 0s; }
+
+.top:hover {
+  opacity: 0; }
 
 #social-buttons {
   margin-top: 40px; }
@@ -237,6 +286,47 @@ body {
   margin-left: 10px;
   float: left; }
 
+/****** modal ********/
+.modal-dialog {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  pointer-events: none; }
+
+.modal-content {
+  pointer-events: auto;
+  margin: 0 auto;
+  border-color: #fff;
+  border-radius: 4px; }
+  .modal-content .modal-body {
+    background-color: #ff3a41;
+    position: relative;
+    padding: 2px; }
+    .modal-content .modal-body button {
+      font-family: Raleway;
+      font-size: 30px;
+      display: inline-block;
+      height: 15px;
+      line-height: 15px;
+      color: #fff;
+      opacity: 0.6;
+      position: absolute;
+      right: 2px;
+      top: 2px; }
+      .modal-content .modal-body button:hover {
+        opacity: 1; }
+    .modal-content .modal-body > p {
+      font-family: Raleway;
+      color: #fff;
+      font-size: 16px;
+      margin: 0;
+      display: inline-block;
+      width: 300px;
+      height: 60px;
+      line-height: 60px;
+      text-align: center; }
+
 /****** footer *********/
 #footer {
   margin-top: -30px;
@@ -262,28 +352,34 @@ body {
     height: 500px;
     margin-top: -250px; } }
 @media screen and (max-width: 1200px) {
+  body .bg-no-image {
+    height: 550px; }
   body .bg-image {
     height: 500px; }
-  body .desc-text {
+  body .desc-text, body #list {
     width: 450px; }
   body .info-text {
     font-size: 18px; }
-  body .body-text {
+  body .body-text, body #list > li {
     font-size: 16px; }
   body .side-img {
     height: 400px;
     margin-top: -200px; } }
 @media screen and (max-width: 1000px) {
+  body .bg-no-image {
+    height: 480px; }
   body .bg-image {
     height: 380px; }
   body .side-img {
     opacity: 0;
     pointer-events: none; }
-  body .body-text {
-    font-size: 12px; }
+  body .body-text, body #list > li {
+    font-size: 14px; }
   body #as-img {
     height: 70px; } }
 @media screen and (max-width: 500px) {
+  body .bg-no-image {
+    height: 520px; }
   body .form-control {
     float: none;
     margin: 0 auto;
@@ -296,7 +392,7 @@ body {
   body #submit-btn {
     margin-left: 0;
     float: none; }
-  body .desc-text {
+  body .desc-text, body #list {
     width: 350px; }
   body .info-text {
     font-size: 16px; }
@@ -309,7 +405,9 @@ body {
     float: none;
     margin: 0 auto; } }
 @media screen and (max-width: 370px) {
-  body .desc-text {
+  body .bg-no-image {
+    height: 590px; }
+  body .desc-text, body #list {
     width: 280px; }
   body #as-img {
     height: 60px;
