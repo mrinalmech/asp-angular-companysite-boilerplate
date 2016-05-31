@@ -1,8 +1,8 @@
-<form role="form" id="mailing-list">
-               <p id="newsletter-text" class="macondo-text">sign up for the newsletter</p>
-               <div class="row-holder">
-                  <input type = "text" class = "form-control" id = "name" placeholder = "name" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid name">
-                  <input type = "text" class = "form-control" id = "email" placeholder = "email" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid email">
-                  <button id="submit-btn" type = "submit" class = "btn btn-macondo" >subscribe</button>
-               </div>
-            </form>
+<form role="form" name="mailingList" ng-submit="addUser(mailingList.$valid)" novalidate>
+   <p id="newsletter-text" class="macondo-text center-text">sign up for the newsletter</p>
+   <div class="row-holder">
+      <input type = "text" class = "form-control" id = "name"  ng-model="name" placeholder = "name" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid name" required>
+      <input type = "email" class = "form-control" id = "email"  ng-model="email" placeholder = "email" data-toggle="popover" data-trigger="manual" data-placement="top" data-content="Enter valid email" required>
+      <button id="submit-btn" type = "submit" class = "btn btn-macondo" >subscribe</button>
+   </div>
+</form>

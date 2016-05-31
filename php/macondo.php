@@ -1,4 +1,7 @@
 <?php
+if ($_SERVER['REQUEST_METHOD'] == 'POST' && empty($_POST))
+    $_POST = json_decode(file_get_contents('php://input'), true);
+
 $request_url = 'https://campaigns.zoho.com/api/xml/listsubscribe';
 
 $ch = curl_init();
