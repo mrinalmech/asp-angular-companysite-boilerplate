@@ -1,4 +1,5 @@
-angular.module('MacondoWebsite').config(function ($routeProvider) {
+angular.module('MacondoWebsite').config(function ($routeProvider,$locationProvider) {
+	
 	$routeProvider
 	.when('/', {
 		redirectTo : '/home'

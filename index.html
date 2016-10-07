@@ -28,16 +28,12 @@
                   <a href="#/"><img class = "brand" src="assets/img/logo.png" alt="Macondo Games" /></a>
                </div>
                <div class="collapse navbar-collapse" id="mHeader">
-                  <ul class="nav navbar-nav">
-                     <li><a href="#/about">about</a></li>
-                     <li><a href="#/games">games</a></li>
-                     <li><a href="#/career">career</a></li>
-                  </ul>
+                  <mac-page-nav></mac-page-nav>
                </div>
             </div>
          </nav>
          <div id="main">
-            <div ng-view></div>
+            <div ng-view class="ui-main"></div>
 			<mac-social></mac-social>
 			<mac-mailing-list></mac-mailing-list>
             
@@ -55,6 +51,7 @@
 	<script src="assets/js/vendor/angular.min.js"></script>
 	<script src="assets/js/vendor/angular-route.min.js"></script>
 	<script src="assets/js/vendor/angular-resource.min.js"></script>
+	<script src="assets/js/vendor/angular-animate.min.js"></script>
 	<script src="assets/js/vendor/bootstrap.min.js"></script>
 
 
@@ -71,6 +68,7 @@
 	<script src="assets/js/directives/macMailingList.js"></script>
 	<script src="assets/js/directives/macModal.js"></script>
 	<script src="assets/js/directives/macSocial.js"></script>
+	<script src="assets/js/directives/macPageNav.js"></script>
 	
 
 

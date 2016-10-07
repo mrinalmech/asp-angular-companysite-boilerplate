@@ -1,1 +1,1 @@
-angular.module('MacondoWebsite',['ngRoute','ngResource']);
+angular.module('MacondoWebsite',['ngRoute','ngResource','ngAnimate']);
